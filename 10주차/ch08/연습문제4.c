@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+    int days[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    int m;
+    
+    while (1) {
+        printf("월 입력: ");
+        scanf("%d", &m);
+        
+        if (m < 1 || m > 12) {
+            break;
+        }
+        
+        printf("%d\n", days[m]);
+    }
+    
+    return 0;
+}
